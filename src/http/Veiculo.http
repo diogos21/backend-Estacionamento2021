@@ -1,0 +1,47 @@
+//Teste de Requisições REST
+@baseURL = http://localhost:4000
+@id = 6154842cd0fc70134fae8f03
+
+###
+// GET - Lista todas os veículos
+GET {{baseURL}}/veiculos
+Content-Type: application/json
+
+###
+// GET - Lista todas os veículos
+GET {{baseURL}}/veiculos/{{id}}
+Content-Type: application/json
+
+###
+// POST - Inclui um novo veículo
+POST {{baseURL}}/veiculos
+Content-Type: application/json
+
+{
+    "marca":"Fiat",
+    "modelo":"Palio",
+    "ano": 2001,
+    "placa":"EOK8130",
+    "cor":"Vermelho",
+    "status":"ativo"
+}
+
+###
+// PUT - Altera dados de um veículo existente
+PUT {{baseURL}}/veiculos
+Content-Type: application/json
+
+{
+    "_id":"61547d1f9e89bd858191e4af",
+    "marca":"Fiat",
+    "modelo":"Palio",
+    "ano": 2001,
+    "placa":"EOK8130",
+    "cor":"Prata",
+    "status":"ativo"
+}
+
+###
+// DELETE - Exclui um veículo pelo ID
+DELETE {{baseURL}}/veiculos/{{id}}
+Content-Type: application/json
