@@ -1,6 +1,6 @@
 //Teste de Requisições REST
 @baseURL = http://localhost:4000
-@id = 615b7ce2025cef846247e859
+@id = 615b7fdd752fa2753b2f7966
 
 ###
 // GET - Lista todas os veículos
@@ -20,7 +20,7 @@ Content-Type: application/json
 {
     "marca":"Renault",
     "modelo":"Duster",
-    "ano": "2014",
+    "ano": 2014,
     "placa":"JEG2P309",
     "cor":"Marrom",
     "status":"ativo"
