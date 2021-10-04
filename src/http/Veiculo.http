@@ -1,6 +1,6 @@
 //Teste de Requisições REST
 @baseURL = http://localhost:4000
-@id = 6154842cd0fc70134fae8f03
+@id = 615b7ce2025cef846247e859
 
 ###
 // GET - Lista todas os veículos
@@ -8,7 +8,7 @@ GET {{baseURL}}/veiculos
 Content-Type: application/json
 
 ###
-// GET - Lista todas os veículos
+// GET - Lista um único veículo pelo ID
 GET {{baseURL}}/veiculos/{{id}}
 Content-Type: application/json
 
@@ -18,11 +18,11 @@ POST {{baseURL}}/veiculos
 Content-Type: application/json
 
 {
-    "marca":"Nissan",
-    "modelo":"Kicks",
-    "ano": 2020,
-    "placa":"KEW2328",
-    "cor":"Vermelho",
+    "marca":"Renault",
+    "modelo":"Duster",
+    "ano": "2014",
+    "placa":"JEG2P309",
+    "cor":"Marrom",
     "status":"ativo"
 }
 
@@ -37,7 +37,7 @@ Content-Type: application/json
     "modelo":"Kicks",
     "ano": 2020,
     "placa":"KEW2328",
-    "cor":"Cinza/Laranja",
+    "cor":"Amarelo",
     "status":"ativo"
 }
 

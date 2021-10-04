@@ -8,6 +8,7 @@ const Veiculo = require('../model/Veiculo')
 const validaVeiculo = [
     check('marca','Nome da marca do veículo é obrigatório').not().isEmpty(),
     check('modelo','Modelo do carro não informado').not().isEmpty(),
+    check('ano','Erro! Inserir dado numérico!').not().isString(),
     check('status','Informe um status válido para a categoria.').isIn(['ativo','inativo']),
 ]
 
