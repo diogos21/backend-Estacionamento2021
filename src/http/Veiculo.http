@@ -18,10 +18,10 @@ POST {{baseURL}}/veiculos
 Content-Type: application/json
 
 {
-    "marca":"Fiat",
-    "modelo":"Palio",
-    "ano": 2001,
-    "placa":"EOK8130",
+    "marca":"Nissan",
+    "modelo":"Kicks",
+    "ano": 2020,
+    "placa":"KEW2328",
     "cor":"Vermelho",
     "status":"ativo"
 }
@@ -32,12 +32,12 @@ PUT {{baseURL}}/veiculos
 Content-Type: application/json
 
 {
-    "_id":"61547d1f9e89bd858191e4af",
-    "marca":"Fiat",
-    "modelo":"Palio",
-    "ano": 2001,
-    "placa":"EOK8130",
-    "cor":"Prata",
+    "_id":"61550f3e541f83c81d8f7ce5",
+    "marca":"Nissan",
+    "modelo":"Kicks",
+    "ano": 2020,
+    "placa":"KEW2328",
+    "cor":"Cinza/Laranja",
     "status":"ativo"
 }
 
