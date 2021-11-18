@@ -6,6 +6,7 @@ const VeiculoSchema = mongoose.Schema({
     ano: {type: Number},
     cor: {type: String},
     placa: {type: String},
+    vaga: {type: String},
     status: {type: String, enum: ['ativo','inativo'], default: 'ativo'}
 
 },{timestamps: true})

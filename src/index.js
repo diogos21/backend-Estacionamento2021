@@ -1,11 +1,13 @@
 const express = require('express')
-require('dotenv').config() 
+require('dotenv').config()
+const cors = require('cors') 
 const InicializaMongoServer = require('./config/db')
 const rotasVeiculo = require('./routes/Veiculo')
 
 InicializaMongoServer()
 const app = express()
 
+app.use(cors()) //CORS
 
 app.use(express.json()) 
 
